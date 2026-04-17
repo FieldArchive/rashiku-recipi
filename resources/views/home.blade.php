@@ -141,7 +141,7 @@
         'invasion-article-check' => [
             'prompt' => 'いま近いのはどちらですか？',
             'choices' => [
-                ['label' => '失礼な態度そのものが引っかかっている', 'article' => 'rude-attitude-stuck'],
+                ['label' => 'せっかく気分よかったのに、無遠慮に踏みにじられた', 'article' => 'rude-attitude-stuck'],
                 ['label' => '毎回バッドエンドルートを選んでしまうのはなぜだろうって思えてきた。', 'article' => 'trying-hard-but-bad-ending'],
             ],
         ],
