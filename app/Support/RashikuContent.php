@@ -162,9 +162,9 @@ class RashikuContent
                 'title' => '失礼な態度そのものが引っかかっている時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/rude-attitude-stuck.md')),
             ],
-            'zatchy-case' => [
-                'title' => '(仮) ざっちー案件とは？',
-                'html' => self::renderDialogueMarkdown(resource_path('content/articles/zatchy-case.md')),
+            'what-is-zatchy' => [
+                'title' => 'ざっちーってなに？',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/what-is-zatchy.md')),
             ],
         ];
     }
