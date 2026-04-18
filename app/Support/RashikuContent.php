@@ -138,9 +138,17 @@ class RashikuContent
                 'title' => '人に会ったり、出かけたりしたあとから重い時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/after-going-out-heavy.md')),
             ],
+            'avoidance-escape' => [
+                'title' => '(仮) やりたくないことから逃げたくて、別のことに没頭してしまう時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/avoidance-escape.md')),
+            ],
             'body-heavy-first' => [
                 'title' => '特に思い当たらないけれど、まず身体が重い時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/body-heavy-first.md')),
+            ],
+            'crowd-pressure-anxiety' => [
+                'title' => '(仮) 大勢の空気に飲まれそうな時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/crowd-pressure-anxiety.md')),
             ],
             'mind-still-running' => [
                 'title' => '頭の中で、何かがまだ続いている時のレシピ',

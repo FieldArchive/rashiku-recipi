@@ -136,6 +136,7 @@
             'prompt' => 'いま近いのはどちらですか？',
             'choices' => [
                 ['label' => '一銭にもならないことにのめり込んでいて不安', 'article' => 'unpaid-absorption-anxiety'],
+                ['label' => '大勢の空気に飲まれそうで不安', 'article' => 'crowd-pressure-anxiety'],
             ],
         ],
         'invasion-article-check' => [
@@ -150,6 +151,7 @@
             'choices' => [
                 ['label' => '何もかも手が出ない', 'next' => 'full-freeze-origin'],
                 ['label' => '頭の中で考えすぎて、やる気が出ない', 'article' => 'mind-still-running'],
+                ['label' => 'やらなきゃいけないことから逃げたい', 'article' => 'avoidance-escape'],
             ],
         ],
         'full-freeze-origin' => [
