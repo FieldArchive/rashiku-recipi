@@ -129,7 +129,7 @@
                 ['label' => 'やるべきことに、やる気が出ない', 'next' => 'work-freeze-check'],
                 ['label' => 'えもいえぬ不安がある', 'next' => 'anxiety-check'],
                 ['label' => '失礼な態度をされて、引っかかっている', 'next' => 'invasion-article-check'],
-                ['label' => '相手に対して気持ちが引きづっている', 'next' => 'relationship-stuck-check'],
+                ['label' => '相手に対して気持ちが引きずっている', 'next' => 'relationship-stuck-check'],
             ],
         ],
         'anxiety-check' => [
@@ -149,7 +149,7 @@
         'relationship-stuck-check' => [
             'prompt' => '相手とのことで、いま近いのはどちらですか？',
             'choices' => [
-                ['label' => '相手を不愉快にさせたかもで、引きづっている', 'recipe' => 'social-aftertaste'],
+                ['label' => '相手を不愉快にさせたかもで、引きずっている', 'recipe' => 'social-aftertaste'],
                 ['label' => '相手に引け目や嫉妬を感じて、気持ちがねじれる', 'article' => 'jealousy-toward-capable-people'],
             ],
         ],
