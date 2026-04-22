@@ -154,6 +154,10 @@ class RashikuContent
                 'title' => '頭の中で、何かがまだ続いている時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/mind-still-running.md')),
             ],
+            'jealousy-toward-capable-people' => [
+                'title' => '相手に引け目や嫉妬を感じて、気持ちがねじれる時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/jealousy-toward-capable-people.md')),
+            ],
             'unpaid-absorption-anxiety' => [
                 'title' => '一銭にもならないことにのめり込んでいて、不安な時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/unpaid-absorption-anxiety.md')),
