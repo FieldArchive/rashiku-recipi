@@ -150,6 +150,10 @@ class RashikuContent
                 'title' => '(仮) 大勢の空気に飲まれそうな時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/crowd-pressure-anxiety.md')),
             ],
+            'scarcity-anxiety-rush' => [
+                'title' => '(仮) 足りない気がして、無駄に焦ってしまう時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/scarcity-anxiety-rush.md')),
+            ],
             'mind-still-running' => [
                 'title' => '頭の中で、何かがまだ続いている時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/mind-still-running.md')),

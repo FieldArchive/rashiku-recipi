@@ -137,6 +137,7 @@
             'choices' => [
                 ['label' => '一銭にもならないことにのめり込んでいて不安', 'article' => 'unpaid-absorption-anxiety'],
                 ['label' => '大勢の空気に飲まれそうで不安', 'article' => 'crowd-pressure-anxiety'],
+                ['label' => '足りない気がして、無駄に焦っている', 'article' => 'scarcity-anxiety-rush'],
             ],
         ],
         'invasion-article-check' => [
