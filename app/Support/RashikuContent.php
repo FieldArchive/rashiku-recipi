@@ -139,7 +139,7 @@ class RashikuContent
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/after-going-out-heavy.md')),
             ],
             'avoidance-escape' => [
-                'title' => '(仮) やりたくないことから逃げたくて、別のことに没頭してしまう時のレシピ',
+                'title' => 'やりたくないことから逃げたくて、別のことに没頭してしまう時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/avoidance-escape.md')),
             ],
             'body-heavy-first' => [
