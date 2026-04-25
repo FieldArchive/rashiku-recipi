@@ -151,7 +151,7 @@ class RashikuContent
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/crowd-pressure-anxiety.md')),
             ],
             'scarcity-anxiety-rush' => [
-                'title' => '(仮) 足りない気がして、無駄に焦ってしまう時のレシピ',
+                'title' => '(仮) お金が足りなくなる気がして、買う決断ができない時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/scarcity-anxiety-rush.md')),
             ],
             'mind-still-running' => [
