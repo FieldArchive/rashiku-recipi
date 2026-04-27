@@ -150,6 +150,18 @@ class RashikuContent
                 'title' => '(仮) 大勢の空気に飲まれそうな時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/crowd-pressure-anxiety.md')),
             ],
+            'delegating-feels-like-loss' => [
+                'title' => '自分でできることにお金を払うのは損だと思ってしまう時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/delegating-feels-like-loss.md')),
+            ],
+            'delegated-work-feels-sloppy' => [
+                'title' => '任せた相手の雑さが引っかかって、結局自分で回収したくなる時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/delegated-work-feels-sloppy.md')),
+            ],
+            'lose-myself-in-important-gatherings' => [
+                'title' => '大事な場で、自分らしさが飛んでしまう時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/lose-myself-in-important-gatherings.md')),
+            ],
             'scarcity-anxiety-rush' => [
                 'title' => '(仮) お金が足りなくなる気がして、買う決断ができない時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/scarcity-anxiety-rush.md')),
@@ -161,6 +173,10 @@ class RashikuContent
             'jealousy-toward-capable-people' => [
                 'title' => '相手に引け目や嫉妬を感じて、気持ちがねじれる時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/jealousy-toward-capable-people.md')),
+            ],
+            'too-many-good-options-stuck' => [
+                'title' => 'どの選択にも良さが見えて、動けない時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/too-many-good-options-stuck.md')),
             ],
             'unpaid-absorption-anxiety' => [
                 'title' => '一銭にもならないことにのめり込んでいて、不安な時のレシピ',

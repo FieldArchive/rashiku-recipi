@@ -5,10 +5,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home', [
-        'recipes' => RashikuContent::recipes(),
-        'articles' => RashikuContent::articles(),
-    ]);
+    return view('home');
 });
 
 Route::get('/recipes/{slug}', function (string $slug) {
