@@ -6,6 +6,7 @@
                     ['label' => 'やるべきことに、やる気が出ない', 'next' => 'work-freeze-check'],
                     ['label' => 'えもいえぬ不安がある', 'next' => 'anxiety-check'],
                     ['label' => '人とのことで、自分の調子が乱れそう', 'next' => 'relationship-stuck-check'],
+                    ['label' => '雑に時間を使ってしまっている', 'article' => 'using-time-sloppily'],
                 ],
             ],
             'anxiety-check' => [

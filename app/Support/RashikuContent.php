@@ -182,6 +182,10 @@ class RashikuContent
                 'title' => '一銭にもならないことにのめり込んでいて、不安な時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/unpaid-absorption-anxiety.md')),
             ],
+            'using-time-sloppily' => [
+                'title' => '雑に時間を使ってしまっている時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/using-time-sloppily.md')),
+            ],
             'what-is-yohaku' => [
                 'title' => '余白ってなに？',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/what-is-yohaku.md')),
