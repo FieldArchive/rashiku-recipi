@@ -5,7 +5,7 @@
                 'choices' => [
                     ['label' => 'やるべきことに、やる気が出ない', 'next' => 'work-freeze-check'],
                     ['label' => 'えもいえぬ不安がある', 'next' => 'anxiety-check'],
-                    ['label' => '人とのことで、自分の調子が乱れそう', 'next' => 'relationship-stuck-check'],
+                    ['label' => '人とのことで、自分の調子が乱れている', 'next' => 'relationship-stuck-check'],
                     ['label' => '雑に時間を使ってしまっている', 'article' => 'using-time-sloppily'],
                 ],
             ],
@@ -33,9 +33,21 @@
             'relationship-stuck-check' => [
                 'prompt' => '人とのことで、いま近いのはどちらですか？',
                 'choices' => [
-                    ['label' => '人に会ったり、出かけたりしたあとから重い', 'article' => 'after-going-out-heavy'],
+                    ['label' => '相手の雑な対応で反応してしまう', 'next' => 'other-person-trigger-check'],
+                    ['label' => '自分で勝手に反応してしまう', 'next' => 'self-trigger-check'],
+                    ['label' => '気持ちには余裕あるのにモヤモヤが晴れない', 'article' => 'after-going-out-heavy'],
+                ],
+            ],
+            'other-person-trigger-check' => [
+                'prompt' => 'いま近いのはどちらですか？',
+                'choices' => [
                     ['label' => '失礼な態度をされて、引っかかっている', 'next' => 'invasion-article-check'],
                     ['label' => '相手を不愉快にさせたかもで、引きずっている', 'recipe' => 'social-aftertaste'],
+                ],
+            ],
+            'self-trigger-check' => [
+                'prompt' => 'いま近いのはどちらですか？',
+                'choices' => [
                     ['label' => '相手に引け目や嫉妬を感じて、気持ちがねじれる', 'article' => 'jealousy-toward-capable-people'],
                     ['label' => '人に任せる気になれない', 'next' => 'delegation-anxiety-check'],
                     ['label' => '大事な場で、自分らしさが飛んでしまう', 'article' => 'lose-myself-in-important-gatherings'],
