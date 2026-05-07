@@ -186,6 +186,10 @@ class RashikuContent
                 'title' => '雑に時間を使ってしまっている時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/using-time-sloppily.md')),
             ],
+            'restoring-time-doubt' => [
+                'title' => '整えることに時間を使ったのに、これでいいのかと思う時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/restoring-time-doubt.md')),
+            ],
             'what-is-yohaku' => [
                 'title' => '余白ってなに？',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/what-is-yohaku.md')),
