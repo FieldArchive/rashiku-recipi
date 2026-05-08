@@ -145,7 +145,7 @@
     <body>
         <main>
             <a class="brand-link" href="{{ url('/') }}">らしくレシピ</a><br>
-            <a class="back" href="{{ url('/?resume=1') }}">← 診断にもどる</a>
+            <a class="back" href="{{ $backUrl ?? url('/?resume=1') }}">{{ $backLabel ?? '← 診断にもどる' }}</a>
             <article class="body">{!! $html !!}</article>
         </main>
         <button class="to-top" id="to-top" type="button" aria-label="上に戻る">↑</button>

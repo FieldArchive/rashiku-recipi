@@ -77,6 +77,7 @@
             ],
         ],
     ];
+    $movies = \App\Support\RashikuContent::movies();
 @endphp
 <!DOCTYPE html>
 <html lang="ja">
@@ -267,6 +268,51 @@
                 display: none;
             }
 
+            .taste-section {
+                margin-top: 36px;
+                padding-top: 26px;
+                border-top: 1px solid var(--line);
+            }
+
+            .taste-title {
+                margin: 0 0 14px;
+                color: var(--muted);
+                font-size: 0.92rem;
+                font-weight: 700;
+                letter-spacing: 0.08em;
+            }
+
+            .movie-list {
+                display: grid;
+                gap: 10px;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            .movie-link {
+                display: inline-flex;
+                align-items: baseline;
+                gap: 8px;
+                width: fit-content;
+                max-width: 100%;
+                color: var(--ink);
+                text-decoration: none;
+                line-height: 1.7;
+            }
+
+            .movie-link:hover,
+            .movie-link:focus-visible {
+                text-decoration: underline;
+                outline: none;
+            }
+
+            .movie-date {
+                color: var(--muted);
+                font-size: 0.9rem;
+                white-space: nowrap;
+            }
+
             .ghost-button {
                 border: 1px solid rgba(129, 85, 63, 0.2);
                 background: rgba(255, 255, 255, 0.55);
@@ -326,6 +372,20 @@
                         <div class="utility-row is-hidden" id="utility-row">
                             <button class="ghost-button" type="button" id="back-button" disabled>一つ前に戻る</button>
                         </div>
+
+                        <section class="taste-section" aria-labelledby="movies-heading">
+                            <h2 class="taste-title" id="movies-heading">余白で味わう映画</h2>
+                            <ul class="movie-list">
+                                @foreach ($movies as $slug => $movie)
+                                    <li>
+                                        <a class="movie-link" href="{{ route('movies.show', $slug) }}">
+                                            <span>{{ $movie['title'] }}</span>
+                                            <span class="movie-date">({{ $movie['watched_on'] }})</span>
+                                        </a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </section>
                 </section>
             </section>
         </main>

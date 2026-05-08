@@ -208,4 +208,15 @@ class RashikuContent
             ],
         ];
     }
+
+    public static function movies(): array
+    {
+        return [
+            'the-devil-wears-prada' => [
+                'title' => 'プラダを着た悪魔',
+                'watched_on' => '2026/5/7',
+                'html' => self::renderDialogueMarkdown(resource_path('content/movies/the-devil-wears-prada.md')),
+            ],
+        ];
+    }
 }
