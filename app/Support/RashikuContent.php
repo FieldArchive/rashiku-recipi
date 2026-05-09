@@ -212,6 +212,11 @@ class RashikuContent
     public static function movies(): array
     {
         return [
+            'its-complicated' => [
+                'title' => '恋するベーカリー',
+                'watched_on' => '2026/5/8',
+                'html' => self::renderDialogueMarkdown(resource_path('content/movies/its-complicated.md')),
+            ],
             'the-devil-wears-prada' => [
                 'title' => 'プラダを着た悪魔',
                 'watched_on' => '2026/5/7',
