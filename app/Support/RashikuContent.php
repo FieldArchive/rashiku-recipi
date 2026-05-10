@@ -130,6 +130,10 @@ class RashikuContent
     public static function articles(): array
     {
         return [
+            'being-yourself-brings-back-pain' => [
+                'title' => '自分らしくしようとすると、痛い思いがよみがえる時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/being-yourself-brings-back-pain.md')),
+            ],
             'nothing-moves' => [
                 'title' => 'やるべきことに、やる気が出ない。さらに、何もかも手が出ない時',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/nothing-moves.md')),

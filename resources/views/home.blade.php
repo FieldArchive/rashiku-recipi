@@ -42,7 +42,14 @@
                 'choices' => [
                     ['label' => '相手の雑な対応で反応してしまう', 'next' => 'other-person-trigger-check'],
                     ['label' => '自分で勝手に反応してしまう', 'next' => 'self-trigger-check'],
-                    ['label' => '気持ちには余裕あるのにモヤモヤが晴れない', 'article' => 'after-going-out-heavy'],
+                    ['label' => '気持ちには余裕あるのにモヤモヤが晴れない', 'next' => 'lingering-feeling-check'],
+                ],
+            ],
+            'lingering-feeling-check' => [
+                'prompt' => 'いま近いのはどちらですか？',
+                'choices' => [
+                    ['label' => '人に会ったり、出かけたりしたあとでモヤモヤが晴れない', 'article' => 'after-going-out-heavy'],
+                    ['label' => '自分らしくしようとすると、痛い思いがよみがえる', 'article' => 'being-yourself-brings-back-pain'],
                 ],
             ],
             'other-person-trigger-check' => [
