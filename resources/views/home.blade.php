@@ -3,9 +3,11 @@
             'start' => [
                 'prompt' => 'いまの感じにいちばん近いものを選んでください。',
                 'choices' => [
+                    ['label' => '相手の雑な対応で反応してしまう', 'next' => 'other-person-trigger-check'],
+                    ['label' => '自分で勝手に反応してしまう', 'next' => 'self-trigger-check'],
                     ['label' => 'やるべきことに、やる気が出ない', 'next' => 'work-freeze-check'],
                     ['label' => 'えもいえぬ不安がある', 'next' => 'anxiety-check'],
-                    ['label' => '人とのことで、自分の調子が乱れている', 'next' => 'relationship-stuck-check'],
+                    ['label' => '気持ちには余裕あるのにモヤモヤが晴れない', 'next' => 'lingering-feeling-check'],
                     ['label' => '時間の使い方で、気持ちが引っかかっている', 'next' => 'time-use-check'],
                 ],
             ],
@@ -21,30 +23,9 @@
                 'choices' => [
                     ['label' => '一銭にもならないことにのめり込んでいて不安', 'article' => 'unpaid-absorption-anxiety'],
                 ['label' => '大勢の空気に飲まれそうで不安', 'article' => 'crowd-pressure-anxiety'],
-                ['label' => '足りない気がして、無駄に焦っている', 'next' => 'scarcity-anxiety-check'],
-            ],
-        ],
-        'scarcity-anxiety-check' => [
-            'prompt' => 'いま近いのはどちらですか？',
-            'choices' => [
                 ['label' => 'お金が足りなくなる気がして、買う決断ができない', 'article' => 'scarcity-anxiety-rush'],
             ],
         ],
-        'invasion-article-check' => [
-            'prompt' => 'いま近いのはどちらですか？',
-            'choices' => [
-                ['label' => 'せっかく気分よかったのに、無遠慮に踏みにじられた', 'article' => 'rude-attitude-stuck'],
-                ['label' => '毎回バッドエンドルートを選んでしまうのはなぜだろうって思えてきた。', 'article' => 'trying-hard-but-bad-ending'],
-            ],
-        ],
-            'relationship-stuck-check' => [
-                'prompt' => '人とのことで、いま近いのはどちらですか？',
-                'choices' => [
-                    ['label' => '相手の雑な対応で反応してしまう', 'next' => 'other-person-trigger-check'],
-                    ['label' => '自分で勝手に反応してしまう', 'next' => 'self-trigger-check'],
-                    ['label' => '気持ちには余裕あるのにモヤモヤが晴れない', 'next' => 'lingering-feeling-check'],
-                ],
-            ],
             'lingering-feeling-check' => [
                 'prompt' => 'いま近いのはどちらですか？',
                 'choices' => [
@@ -55,23 +36,18 @@
             'other-person-trigger-check' => [
                 'prompt' => 'いま近いのはどちらですか？',
                 'choices' => [
-                    ['label' => '失礼な態度をされて、引っかかっている', 'next' => 'invasion-article-check'],
-                    ['label' => '相手を不愉快にさせたかもで、引きずっている', 'recipe' => 'social-aftertaste'],
+                    ['label' => 'せっかく気分よかったのに、無遠慮に踏みにじられた', 'article' => 'rude-attitude-stuck'],
+                    ['label' => '毎回バッドエンドルートを選んでしまうのはなぜだろうって思えてきた。', 'article' => 'trying-hard-but-bad-ending'],
                 ],
             ],
             'self-trigger-check' => [
                 'prompt' => 'いま近いのはどちらですか？',
                 'choices' => [
+                    ['label' => 'みんながありがたがる空気に引いてしまう', 'article' => 'repelled-by-shared-values'],
                     ['label' => '相手に引け目や嫉妬を感じて、気持ちがねじれる', 'article' => 'jealousy-toward-capable-people'],
-                    ['label' => '人に任せる気になれない', 'next' => 'delegation-anxiety-check'],
-                    ['label' => '大事な場で、自分らしさが飛んでしまう', 'article' => 'lose-myself-in-important-gatherings'],
-                ],
-            ],
-            'delegation-anxiety-check' => [
-                'prompt' => '人に任せることで、いま近いのはどちらですか？',
-                'choices' => [
                     ['label' => '自分でできることにお金を払うのは損だと思ってしまう', 'article' => 'delegating-feels-like-loss'],
                     ['label' => '任せた相手の雑さが引っかかって、結局自分で回収したくなる', 'article' => 'delegated-work-feels-sloppy'],
+                    ['label' => '大事な場で、自分らしさが飛んでしまう', 'article' => 'lose-myself-in-important-gatherings'],
                 ],
             ],
             'work-freeze-check' => [
@@ -359,6 +335,7 @@
                 .prompt {
                     white-space: normal;
                 }
+
             }
         </style>
     </head>
@@ -393,6 +370,7 @@
                                 @endforeach
                             </ul>
                         </section>
+
                 </section>
             </section>
         </main>
@@ -433,13 +411,8 @@
                     button.className = 'choice-button';
                     button.textContent = choice.label;
                     button.addEventListener('click', () => {
-                        if (choice.recipe || choice.article) {
+                        if (choice.article) {
                             persistDiagnosisState();
-
-                            if (choice.recipe) {
-                                window.location.href = `/recipes/${choice.recipe}`;
-                                return;
-                            }
 
                             window.location.href = `/articles/${choice.article}`;
                             return;
