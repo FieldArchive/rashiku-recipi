@@ -23,7 +23,7 @@ class RashikuContent
         $markdown = file_get_contents($path);
 
         $markdown = preg_replace_callback(
-            '/::(me|guide|point)\R(.*?)\R::/su',
+            '/::(me|guide|point|core)\R(.*?)\R::/su',
             function (array $matches): string {
                 $role = $matches[1];
                 $content = trim($matches[2]);
@@ -31,6 +31,7 @@ class RashikuContent
                 $class = match ($role) {
                     'me' => 'dialogue-bubble dialogue-me',
                     'point' => 'dialogue-point',
+                    'core' => 'dialogue-core',
                     default => 'dialogue-guide',
                 };
 
@@ -56,6 +57,10 @@ class RashikuContent
             'being-yourself-brings-back-pain' => [
                 'title' => '自分らしくしようとすると、痛い思いがよみがえる時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/being-yourself-brings-back-pain.md')),
+            ],
+            'cannot-trust-my-choice' => [
+                'title' => '自分の選択を後悔している時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/cannot-trust-my-choice.md')),
             ],
             'nothing-moves' => [
                 'title' => 'やるべきことに、やる気が出ない。さらに、何もかも手が出ない時',
@@ -148,6 +153,17 @@ class RashikuContent
                 'title' => 'プラダを着た悪魔',
                 'watched_on' => '2026/5/7',
                 'html' => self::renderDialogueMarkdown(resource_path('content/movies/the-devil-wears-prada.md')),
+            ],
+        ];
+    }
+
+    public static function documentaries(): array
+    {
+        return [
+            'isai-to-yobarete' => [
+                'title' => 'テレメンタリーPlus「異才と呼ばれて」',
+                'watched_on' => '2026/5/10',
+                'html' => self::renderDialogueMarkdown(resource_path('content/documentaries/isai-to-yobarete.md')),
             ],
         ];
     }

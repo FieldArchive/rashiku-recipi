@@ -29,3 +29,15 @@ Route::get('/movies/{slug}', function (string $slug) {
         'backLabel' => '← トップにもどる',
     ]);
 })->name('movies.show');
+
+Route::get('/documentaries/{slug}', function (string $slug) {
+    $documentary = Arr::get(RashikuContent::documentaries(), $slug);
+    abort_unless($documentary, 404);
+
+    return view('article', [
+        'title' => $documentary['title'],
+        'html' => $documentary['html'],
+        'backUrl' => url('/'),
+        'backLabel' => '← トップにもどる',
+    ]);
+})->name('documentaries.show');

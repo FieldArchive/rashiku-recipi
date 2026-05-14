@@ -31,6 +31,7 @@
                 'choices' => [
                     ['label' => '人に会ったり、出かけたりしたあとでモヤモヤが晴れない', 'article' => 'after-going-out-heavy'],
                     ['label' => '自分らしくしようとすると、痛い思いがよみがえる', 'article' => 'being-yourself-brings-back-pain'],
+                    ['label' => '自分の選択を後悔している', 'article' => 'cannot-trust-my-choice'],
                 ],
             ],
             'other-person-trigger-check' => [
@@ -61,6 +62,7 @@
         ],
     ];
     $movies = \App\Support\RashikuContent::movies();
+    $documentaries = \App\Support\RashikuContent::documentaries();
 @endphp
 <!DOCTYPE html>
 <html lang="ja">
@@ -365,6 +367,20 @@
                                         <a class="movie-link" href="{{ route('movies.show', $slug) }}">
                                             <span>{{ $movie['title'] }}</span>
                                             <span class="movie-date">({{ $movie['watched_on'] }})</span>
+                                        </a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </section>
+
+                        <section class="taste-section" aria-labelledby="documentaries-heading">
+                            <h2 class="taste-title" id="documentaries-heading">余白で味わうドキュメンタリー</h2>
+                            <ul class="movie-list">
+                                @foreach ($documentaries as $slug => $documentary)
+                                    <li>
+                                        <a class="movie-link" href="{{ route('documentaries.show', $slug) }}">
+                                            <span>{{ $documentary['title'] }}</span>
+                                            <span class="movie-date">({{ $documentary['watched_on'] }})</span>
                                         </a>
                                     </li>
                                 @endforeach

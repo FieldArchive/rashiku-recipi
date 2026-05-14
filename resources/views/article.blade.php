@@ -92,6 +92,14 @@
                 border: 1px solid rgba(120, 101, 84, 0.12);
                 border-radius: 24px;
             }
+            .dialogue-core {
+                margin: 6px 0 30px;
+                padding: 18px 2px 20px;
+                background: transparent;
+                border-top: 1px solid rgba(129, 85, 63, 0.32);
+                border-bottom: 1px solid rgba(129, 85, 63, 0.32);
+                font-size: 0.98rem;
+            }
             .dialogue-body {
                 display: grid;
                 gap: 12px;
@@ -101,7 +109,9 @@
                 line-height: 1.7;
             }
             .dialogue-point .dialogue-body h2,
-            .dialogue-point .dialogue-body h3 {
+            .dialogue-point .dialogue-body h3,
+            .dialogue-core .dialogue-body h2,
+            .dialogue-core .dialogue-body h3 {
                 margin: 0 0 4px;
                 font-size: 1.15rem;
                 letter-spacing: 0.08em;
