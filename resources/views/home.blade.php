@@ -7,7 +7,7 @@
                     ['label' => '自分で勝手に反応してしまう', 'next' => 'self-trigger-check'],
                     ['label' => 'やるべきことに、やる気が出ない', 'next' => 'work-freeze-check'],
                     ['label' => 'えもいえぬ不安がある', 'next' => 'anxiety-check'],
-                    ['label' => '気持ちには余裕あるのにモヤモヤが晴れない', 'next' => 'lingering-feeling-check'],
+                    ['label' => '気持ちに余裕があっても、揺さぶられる', 'next' => 'lingering-feeling-check'],
                     ['label' => '時間の使い方で、気持ちが引っかかっている', 'next' => 'time-use-check'],
                 ],
             ],
@@ -32,6 +32,7 @@
                     ['label' => '人に会ったり、出かけたりしたあとでモヤモヤが晴れない', 'article' => 'after-going-out-heavy'],
                     ['label' => '自分らしくしようとすると、痛い思いがよみがえる', 'article' => 'being-yourself-brings-back-pain'],
                     ['label' => '自分の選択を後悔している', 'article' => 'cannot-trust-my-choice'],
+                    ['label' => '予期せぬことが重なって、余白が試されている', 'article' => 'yohaku-tested-by-events'],
                 ],
             ],
             'other-person-trigger-check' => [
@@ -45,7 +46,7 @@
                 'prompt' => 'いま近いのはどちらですか？',
                 'choices' => [
                     ['label' => 'みんながありがたがる空気に引いてしまう', 'article' => 'repelled-by-shared-values'],
-                    ['label' => '相手に引け目や嫉妬を感じて、気持ちがねじれる', 'article' => 'jealousy-toward-capable-people'],
+                    ['label' => '相手がうまくいっているように見えて、気持ちがねじれる', 'article' => 'jealousy-toward-capable-people'],
                     ['label' => '自分でできることにお金を払うのは損だと思ってしまう', 'article' => 'delegating-feels-like-loss'],
                     ['label' => '任せた相手の雑さが引っかかって、結局自分で回収したくなる', 'article' => 'delegated-work-feels-sloppy'],
                     ['label' => '大事な場で、自分らしさが飛んでしまう', 'article' => 'lose-myself-in-important-gatherings'],

@@ -62,6 +62,10 @@ class RashikuContent
                 'title' => '自分の選択を後悔している時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/cannot-trust-my-choice.md')),
             ],
+            'yohaku-tested-by-events' => [
+                'title' => '予期せぬことが重なって、余白が試される時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/yohaku-tested-by-events.md')),
+            ],
             'nothing-moves' => [
                 'title' => 'やるべきことに、やる気が出ない。さらに、何もかも手が出ない時',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/nothing-moves.md')),
@@ -103,7 +107,7 @@ class RashikuContent
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/mind-still-running.md')),
             ],
             'jealousy-toward-capable-people' => [
-                'title' => '相手に引け目や嫉妬を感じて、気持ちがねじれる時のレシピ',
+                'title' => '相手がうまくいっているように見えて、気持ちがねじれる時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/jealousy-toward-capable-people.md')),
             ],
             'too-many-good-options-stuck' => [
