@@ -4,11 +4,11 @@
                 'prompt' => 'いまの感じにいちばん近いものを選んでください。',
                 'choices' => [
                     ['label' => '相手の雑な対応で反応してしまう', 'next' => 'other-person-trigger-check'],
-                    ['label' => '自分で勝手に反応してしまう', 'next' => 'self-trigger-check'],
+                    ['label' => '自分の内側からモヤモヤが出ている', 'next' => 'self-trigger-check'],
                     ['label' => 'やるべきことに、やる気が出ない', 'next' => 'work-freeze-check'],
                     ['label' => 'えもいえぬ不安がある', 'next' => 'anxiety-check'],
                     ['label' => '気持ちに余裕があっても、揺さぶられる', 'next' => 'lingering-feeling-check'],
-                    ['label' => '時間の使い方で、気持ちが引っかかっている', 'next' => 'time-use-check'],
+                    ['label' => '時間やお金の使い方で気持ちが引っかかる', 'next' => 'time-use-check'],
                 ],
             ],
             'time-use-check' => [
@@ -16,6 +16,7 @@
                 'choices' => [
                     ['label' => '雑に時間を使ってしまっている', 'article' => 'using-time-sloppily'],
                     ['label' => '整えることに時間を使ったのに、これでいいのかと思う', 'article' => 'restoring-time-doubt'],
+                    ['label' => '自分でできることにお金を払うのは損だと思ってしまう', 'article' => 'delegating-feels-like-loss'],
                 ],
             ],
             'anxiety-check' => [
@@ -38,8 +39,9 @@
             'other-person-trigger-check' => [
                 'prompt' => 'いま近いのはどちらですか？',
                 'choices' => [
-                    ['label' => 'せっかく気分よかったのに、無遠慮に踏みにじられた', 'article' => 'rude-attitude-stuck'],
                     ['label' => '毎回バッドエンドルートを選んでしまうのはなぜだろうって思えてきた。', 'article' => 'trying-hard-but-bad-ending'],
+                    ['label' => 'せっかく気分よかったのに、無遠慮に踏みにじられた', 'article' => 'rude-attitude-stuck'],
+                    ['label' => '任せた相手の雑さが引っかかって、結局自分で回収したくなる', 'article' => 'delegated-work-feels-sloppy'],
                 ],
             ],
             'self-trigger-check' => [
@@ -47,8 +49,7 @@
                 'choices' => [
                     ['label' => 'みんながありがたがる空気に引いてしまう', 'article' => 'repelled-by-shared-values'],
                     ['label' => '相手がうまくいっているように見えて、気持ちがねじれる', 'article' => 'jealousy-toward-capable-people'],
-                    ['label' => '自分でできることにお金を払うのは損だと思ってしまう', 'article' => 'delegating-feels-like-loss'],
-                    ['label' => '任せた相手の雑さが引っかかって、結局自分で回収したくなる', 'article' => 'delegated-work-feels-sloppy'],
+                    ['label' => '自分のモヤモヤを相手にぶつけてしまった', 'article' => 'projecting-moyamoya-onto-others'],
                     ['label' => '大事な場で、自分らしさが飛んでしまう', 'article' => 'lose-myself-in-important-gatherings'],
                 ],
             ],

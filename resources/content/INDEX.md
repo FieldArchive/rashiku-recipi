@@ -14,20 +14,20 @@
 らしくレシピ
 └─ いまの感じにいちばん近いものを選んでください。
    ├─ 相手の雑な対応で反応してしまう
+   │  ├─ FIX: 毎回バッドエンドルートを選んでしまうのはなぜだろうって思えてきた。
+   │  │  └─ articles/trying-hard-but-bad-ending.md
    │  ├─ FIX: せっかく気分よかったのに、無遠慮に踏みにじられた
    │  │  └─ articles/rude-attitude-stuck.md
-   │  └─ FIX: 毎回バッドエンドルートを選んでしまうのはなぜだろうって思えてきた。
-   │     └─ articles/trying-hard-but-bad-ending.md
+   │  └─ FIX: 任せた相手の雑さが引っかかって、結局自分で回収したくなる
+   │     └─ articles/delegated-work-feels-sloppy.md
    │
-   ├─ 自分で勝手に反応してしまう
+   ├─ 自分の内側からモヤモヤが出ている
    │  ├─ 仮: みんながありがたがる空気に引いてしまう
    │  │  └─ articles/repelled-by-shared-values.md
    │  ├─ FIX: 相手がうまくいっているように見えて、気持ちがねじれる
    │  │  └─ articles/jealousy-toward-capable-people.md
-   │  ├─ 仮: 自分でできることにお金を払うのは損だと思ってしまう
-   │  │  └─ articles/delegating-feels-like-loss.md
-   │  ├─ FIX: 任せた相手の雑さが引っかかって、結局自分で回収したくなる
-   │  │  └─ articles/delegated-work-feels-sloppy.md
+   │  ├─ 仮: 自分のモヤモヤを相手にぶつけてしまった
+   │  │  └─ articles/projecting-moyamoya-onto-others.md
    │  └─ FIX: 大事な場で、自分らしさが飛んでしまう
    │     └─ articles/lose-myself-in-important-gatherings.md
    │
@@ -59,11 +59,13 @@
    │  └─ FIX: 予期せぬことが重なって、余白が試されている
    │     └─ articles/yohaku-tested-by-events.md
    │
-   └─ 時間の使い方で、気持ちが引っかかっている
+   └─ 時間やお金の使い方で気持ちが引っかかる
       ├─ FIX: 雑に時間を使ってしまっている
       │  └─ articles/using-time-sloppily.md
-      └─ FIX: 整えることに時間を使ったのに、これでいいのかと思う
-         └─ articles/restoring-time-doubt.md
+      ├─ FIX: 整えることに時間を使ったのに、これでいいのかと思う
+      │  └─ articles/restoring-time-doubt.md
+      └─ 仮: 自分でできることにお金を払うのは損だと思ってしまう
+         └─ articles/delegating-feels-like-loss.md
 ```
 
 ## 用語・基本記事
@@ -134,6 +136,16 @@
 共通土台
 └─ articles/cannot-trust-my-choice.md
    └─ 後悔型ざっちー。時間とお金のモヤモヤの共通基盤として参照できる
+
+仮記事
+└─ articles/projecting-moyamoya-onto-others.md
+   ├─ タイトル: 自分のモヤモヤを相手にぶつけてしまった時のレシピ
+   ├─ 置き場所:
+   │  └─ 「自分の内側からモヤモヤが出ている」の下
+   ├─ 方向:
+   │  ├─ 自己責めではなく、相手に移る前に連鎖を回収する記事にする
+   │  ├─ 気づいた瞬間に、事実と感情を分け直す
+   │  └─ 相手を怒らせないために自分を消すのではなく、自分の言いたいことを余白のある形に置き直す
 
 FIX済み
 └─ articles/yohaku-tested-by-events.md

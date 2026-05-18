@@ -94,6 +94,10 @@ class RashikuContent
                 'title' => '任せた相手の雑さが引っかかって、結局自分で回収したくなる時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/delegated-work-feels-sloppy.md')),
             ],
+            'projecting-moyamoya-onto-others' => [
+                'title' => '自分のモヤモヤを相手にぶつけてしまった時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/projecting-moyamoya-onto-others.md')),
+            ],
             'lose-myself-in-important-gatherings' => [
                 'title' => '大事な場で、自分らしさが飛んでしまう時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/lose-myself-in-important-gatherings.md')),
