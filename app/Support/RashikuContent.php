@@ -50,10 +50,6 @@ class RashikuContent
     public static function articles(): array
     {
         return [
-            'repelled-by-shared-values' => [
-                'title' => 'みんながありがたがる空気に引いてしまう時のレシピ',
-                'html' => self::renderDialogueMarkdown(resource_path('content/articles/repelled-by-shared-values.md')),
-            ],
             'being-yourself-brings-back-pain' => [
                 'title' => '自分らしくしようとすると、痛い思いがよみがえる時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/being-yourself-brings-back-pain.md')),
@@ -82,37 +78,21 @@ class RashikuContent
                 'title' => '特に思い当たらないけれど、まず身体が重い時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/body-heavy-first.md')),
             ],
-            'crowd-pressure-anxiety' => [
-                'title' => '(仮) 大勢の空気に飲まれそうな時のレシピ',
-                'html' => self::renderDialogueMarkdown(resource_path('content/articles/crowd-pressure-anxiety.md')),
-            ],
-            'delegating-feels-like-loss' => [
-                'title' => '自分でできることにお金を払うのは損だと思ってしまう時のレシピ',
-                'html' => self::renderDialogueMarkdown(resource_path('content/articles/delegating-feels-like-loss.md')),
-            ],
             'delegated-work-feels-sloppy' => [
                 'title' => '任せた相手の雑さが引っかかって、結局自分で回収したくなる時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/delegated-work-feels-sloppy.md')),
-            ],
-            'projecting-moyamoya-onto-others' => [
-                'title' => '自分のモヤモヤを相手にぶつけてしまった時のレシピ',
-                'html' => self::renderDialogueMarkdown(resource_path('content/articles/projecting-moyamoya-onto-others.md')),
             ],
             'lose-myself-in-important-gatherings' => [
                 'title' => '大事な場で、自分らしさが飛んでしまう時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/lose-myself-in-important-gatherings.md')),
             ],
-            'scarcity-anxiety-rush' => [
-                'title' => '(仮) お金が足りなくなる気がして、買う決断ができない時のレシピ',
-                'html' => self::renderDialogueMarkdown(resource_path('content/articles/scarcity-anxiety-rush.md')),
+            'moyamoya-wrong-next-move' => [
+                'title' => 'モヤモヤのせいで、次の一手を間違えそうな時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/moyamoya-wrong-next-move.md')),
             ],
             'mind-still-running' => [
                 'title' => '頭の中で、何かがまだ続いている時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/mind-still-running.md')),
-            ],
-            'jealousy-toward-capable-people' => [
-                'title' => '相手がうまくいっているように見えて、気持ちがねじれる時のレシピ',
-                'html' => self::renderDialogueMarkdown(resource_path('content/articles/jealousy-toward-capable-people.md')),
             ],
             'too-many-good-options-stuck' => [
                 'title' => 'どの選択にも良さが見えて、動けない時のレシピ',

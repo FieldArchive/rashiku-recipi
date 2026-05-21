@@ -8,7 +8,7 @@
                     ['label' => 'やるべきことに、やる気が出ない', 'next' => 'work-freeze-check'],
                     ['label' => 'えもいえぬ不安がある', 'next' => 'anxiety-check'],
                     ['label' => '気持ちに余裕があっても、揺さぶられる', 'next' => 'lingering-feeling-check'],
-                    ['label' => '時間やお金の使い方で気持ちが引っかかる', 'next' => 'time-use-check'],
+                    ['label' => '自分に紐づいたものの使い方で気持ちが引っかかる', 'next' => 'time-use-check'],
                 ],
             ],
             'time-use-check' => [
@@ -16,15 +16,16 @@
                 'choices' => [
                     ['label' => '雑に時間を使ってしまっている', 'article' => 'using-time-sloppily'],
                     ['label' => '整えることに時間を使ったのに、これでいいのかと思う', 'article' => 'restoring-time-doubt'],
-                    ['label' => '自分でできることにお金を払うのは損だと思ってしまう', 'article' => 'delegating-feels-like-loss'],
+                    ['label' => '自分でできることにお金を払うのは損だと思ってしまう（調整中）', 'draft' => true],
+                    ['label' => 'アーカイヴと余白のあいだで、物を手放せない（調整中）', 'draft' => true],
                 ],
             ],
             'anxiety-check' => [
                 'prompt' => 'いま近いのはどちらですか？',
                 'choices' => [
                     ['label' => '一銭にもならないことにのめり込んでいて不安', 'article' => 'unpaid-absorption-anxiety'],
-                ['label' => '大勢の空気に飲まれそうで不安', 'article' => 'crowd-pressure-anxiety'],
-                ['label' => 'お金が足りなくなる気がして、買う決断ができない', 'article' => 'scarcity-anxiety-rush'],
+                    ['label' => '大勢の空気に飲まれそうで不安（調整中）', 'draft' => true],
+                    ['label' => 'お金が足りなくなる気がして、買う決断ができない（調整中）', 'draft' => true],
             ],
         ],
             'lingering-feeling-check' => [
@@ -39,18 +40,21 @@
             'other-person-trigger-check' => [
                 'prompt' => 'いま近いのはどちらですか？',
                 'choices' => [
-                    ['label' => '毎回バッドエンドルートを選んでしまうのはなぜだろうって思えてきた。', 'article' => 'trying-hard-but-bad-ending'],
-                    ['label' => 'せっかく気分よかったのに、無遠慮に踏みにじられた', 'article' => 'rude-attitude-stuck'],
                     ['label' => '任せた相手の雑さが引っかかって、結局自分で回収したくなる', 'article' => 'delegated-work-feels-sloppy'],
+                    ['label' => '自分のお金を納得いかない形で使われてモヤモヤする（調整中）', 'draft' => true],
+                    ['label' => 'せっかく気分よかったのに、無遠慮に踏みにじられた', 'article' => 'rude-attitude-stuck'],
+                    ['label' => '毎回バッドエンドルートを選んでしまうのはなぜだろうって思えてきた。', 'article' => 'trying-hard-but-bad-ending'],
                 ],
             ],
             'self-trigger-check' => [
                 'prompt' => 'いま近いのはどちらですか？',
                 'choices' => [
-                    ['label' => 'みんながありがたがる空気に引いてしまう', 'article' => 'repelled-by-shared-values'],
-                    ['label' => '相手がうまくいっているように見えて、気持ちがねじれる', 'article' => 'jealousy-toward-capable-people'],
-                    ['label' => '自分のモヤモヤを相手にぶつけてしまった', 'article' => 'projecting-moyamoya-onto-others'],
+                    ['label' => 'みんながありがたがる空気に引いてしまう（調整中）', 'draft' => true],
+                    ['label' => '他者がうまくいっているように見えて、気持ちがねじれる（調整中）', 'draft' => true],
+                    ['label' => '自分のモヤモヤを相手にぶつけてしまった（調整中）', 'draft' => true],
+                    ['label' => '年下キャラを卒業できず、自分が年上側に立つのが怖い（調整中）', 'draft' => true],
                     ['label' => '大事な場で、自分らしさが飛んでしまう', 'article' => 'lose-myself-in-important-gatherings'],
+                    ['label' => 'モヤモヤのせいで、次の一手を間違えそう', 'article' => 'moyamoya-wrong-next-move'],
                 ],
             ],
             'work-freeze-check' => [
@@ -215,6 +219,17 @@
                 border-color: rgba(129, 85, 63, 0.3);
                 box-shadow: 0 12px 24px rgba(64, 43, 28, 0.08);
                 outline: none;
+            }
+
+            .choice-button:disabled {
+                cursor: default;
+                opacity: 0.52;
+                transform: none;
+                box-shadow: none;
+            }
+
+            .choice-button.is-draft {
+                color: rgba(60, 48, 40, 0.68);
             }
 
             .trail {
@@ -428,6 +443,12 @@
                     button.type = 'button';
                     button.className = 'choice-button';
                     button.textContent = choice.label;
+                    if (choice.draft) {
+                        button.classList.add('is-draft');
+                        button.disabled = true;
+                        choicesEl.appendChild(button);
+                        return;
+                    }
                     button.addEventListener('click', () => {
                         if (choice.article) {
                             persistDiagnosisState();
