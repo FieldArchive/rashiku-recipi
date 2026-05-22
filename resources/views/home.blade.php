@@ -16,16 +16,16 @@
                 'choices' => [
                     ['label' => '雑に時間を使ってしまっている', 'article' => 'using-time-sloppily'],
                     ['label' => '整えることに時間を使ったのに、これでいいのかと思う', 'article' => 'restoring-time-doubt'],
-                    ['label' => '自分でできることにお金を払うのは損だと思ってしまう（調整中）', 'draft' => true],
-                    ['label' => 'アーカイヴと余白のあいだで、物を手放せない（調整中）', 'draft' => true],
+                    ['label' => '自分でできることにお金を払うのは損だと思ってしまう（調整中）', 'article' => 'delegating-feels-like-loss', 'draft' => true],
+                    ['label' => 'アーカイヴと余白のあいだで、物を手放せない（調整中）', 'article' => 'archive-yohaku-letting-go', 'draft' => true],
                 ],
             ],
             'anxiety-check' => [
                 'prompt' => 'いま近いのはどちらですか？',
                 'choices' => [
                     ['label' => '一銭にもならないことにのめり込んでいて不安', 'article' => 'unpaid-absorption-anxiety'],
-                    ['label' => '大勢の空気に飲まれそうで不安（調整中）', 'draft' => true],
-                    ['label' => 'お金が足りなくなる気がして、買う決断ができない（調整中）', 'draft' => true],
+                    ['label' => '大勢の空気に飲まれそうで不安（調整中）', 'article' => 'crowd-pressure-anxiety', 'draft' => true],
+                    ['label' => 'お金が足りなくなる気がして、買う決断ができない（調整中）', 'article' => 'scarcity-anxiety-rush', 'draft' => true],
             ],
         ],
             'lingering-feeling-check' => [
@@ -40,19 +40,20 @@
             'other-person-trigger-check' => [
                 'prompt' => 'いま近いのはどちらですか？',
                 'choices' => [
-                    ['label' => '任せた相手の雑さが引っかかって、結局自分で回収したくなる', 'article' => 'delegated-work-feels-sloppy'],
-                    ['label' => '自分のお金を納得いかない形で使われてモヤモヤする（調整中）', 'draft' => true],
                     ['label' => 'せっかく気分よかったのに、無遠慮に踏みにじられた', 'article' => 'rude-attitude-stuck'],
                     ['label' => '毎回バッドエンドルートを選んでしまうのはなぜだろうって思えてきた。', 'article' => 'trying-hard-but-bad-ending'],
+                    ['label' => '任せた相手の雑さが引っかかって、結局自分で回収したくなる（調整中）', 'article' => 'delegated-work-feels-sloppy', 'draft' => true],
+                    ['label' => '自分のお金を納得いかない形で使われてモヤモヤする（調整中）', 'article' => 'money-used-without-consent', 'draft' => true],
+                    ['label' => '大切な人が雑に扱われて、自分まで反応しそう', 'article' => 'reacting-to-loved-one-being-hurt'],
                 ],
             ],
             'self-trigger-check' => [
                 'prompt' => 'いま近いのはどちらですか？',
                 'choices' => [
-                    ['label' => 'みんながありがたがる空気に引いてしまう（調整中）', 'draft' => true],
-                    ['label' => '他者がうまくいっているように見えて、気持ちがねじれる（調整中）', 'draft' => true],
-                    ['label' => '自分のモヤモヤを相手にぶつけてしまった（調整中）', 'draft' => true],
-                    ['label' => '年下キャラを卒業できず、自分が年上側に立つのが怖い（調整中）', 'draft' => true],
+                    ['label' => 'みんながありがたがる空気に引いてしまう（調整中）', 'article' => 'repelled-by-shared-values', 'draft' => true],
+                    ['label' => '他者がうまくいっているように見えて、気持ちがねじれる（調整中）', 'article' => 'jealousy-toward-capable-people', 'draft' => true],
+                    ['label' => '自分のモヤモヤを相手にぶつけてしまった（調整中）', 'article' => 'projecting-moyamoya-onto-others', 'draft' => true],
+                    ['label' => '年下キャラを卒業できず、自分が年上側に立つのが怖い（調整中）', 'article' => 'afraid-of-being-older-side', 'draft' => true],
                     ['label' => '大事な場で、自分らしさが飛んでしまう', 'article' => 'lose-myself-in-important-gatherings'],
                     ['label' => 'モヤモヤのせいで、次の一手を間違えそう', 'article' => 'moyamoya-wrong-next-move'],
                 ],
@@ -230,6 +231,14 @@
 
             .choice-button.is-draft {
                 color: rgba(60, 48, 40, 0.68);
+            }
+
+            .choice-draft-slug {
+                display: block;
+                margin-top: 4px;
+                color: rgba(60, 48, 40, 0.45);
+                font-size: 0.72rem;
+                line-height: 1.4;
             }
 
             .trail {
@@ -410,6 +419,7 @@
 
         <script>
             const decisionTree = @json($decisionTree);
+            const isLocal = @json(app()->environment('local'));
 
             const promptEl = document.getElementById('prompt');
             const choicesEl = document.getElementById('choices');
@@ -442,10 +452,23 @@
                     const button = document.createElement('button');
                     button.type = 'button';
                     button.className = 'choice-button';
-                    button.textContent = choice.label;
+                    const label = document.createElement('span');
+                    label.textContent = choice.label;
+                    button.appendChild(label);
                     if (choice.draft) {
                         button.classList.add('is-draft');
-                        button.disabled = true;
+                        if (isLocal && choice.article) {
+                            const slug = document.createElement('span');
+                            slug.className = 'choice-draft-slug';
+                            slug.textContent = `articles/${choice.article}.md`;
+                            button.appendChild(slug);
+                            button.addEventListener('click', () => {
+                                persistDiagnosisState();
+                                window.location.href = `/articles/${choice.article}`;
+                            });
+                        } else {
+                            button.disabled = true;
+                        }
                         choicesEl.appendChild(button);
                         return;
                     }

@@ -14,12 +14,16 @@
 らしくレシピ
 └─ いまの感じにいちばん近いものを選んでください。
    ├─ 相手の雑な対応で反応してしまう
-   │  ├─ FIX: 任せた相手の雑さが引っかかって、結局自分で回収したくなる
-   │  │  └─ articles/delegated-work-feels-sloppy.md
    │  ├─ FIX: せっかく気分よかったのに、無遠慮に踏みにじられた
    │  │  └─ articles/rude-attitude-stuck.md
-   │  └─ FIX: 毎回バッドエンドルートを選んでしまうのはなぜだろうって思えてきた。
-   │     └─ articles/trying-hard-but-bad-ending.md
+   │  ├─ FIX: 毎回バッドエンドルートを選んでしまうのはなぜだろうって思えてきた。
+   │  │  └─ articles/trying-hard-but-bad-ending.md
+   │  ├─ 仮: 任せた相手の雑さが引っかかって、結局自分で回収したくなる
+   │  │  └─ articles/delegated-work-feels-sloppy.md
+   │  ├─ 仮: 自分のお金を納得いかない形で使われてモヤモヤする
+   │  │  └─ articles/money-used-without-consent.md
+   │  └─ 仮・押せる: 大切な人が雑に扱われて、自分まで反応しそう
+   │     └─ articles/reacting-to-loved-one-being-hurt.md
    │
    ├─ 自分の内側からモヤモヤが出ている
    │  ├─ 仮: みんながありがたがる空気に引いてしまう

@@ -78,10 +78,6 @@ class RashikuContent
                 'title' => '特に思い当たらないけれど、まず身体が重い時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/body-heavy-first.md')),
             ],
-            'delegated-work-feels-sloppy' => [
-                'title' => '任せた相手の雑さが引っかかって、結局自分で回収したくなる時のレシピ',
-                'html' => self::renderDialogueMarkdown(resource_path('content/articles/delegated-work-feels-sloppy.md')),
-            ],
             'lose-myself-in-important-gatherings' => [
                 'title' => '大事な場で、自分らしさが飛んでしまう時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/lose-myself-in-important-gatherings.md')),
@@ -122,9 +118,59 @@ class RashikuContent
                 'title' => '失礼な態度そのものが引っかかっている時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/rude-attitude-stuck.md')),
             ],
+            'reacting-to-loved-one-being-hurt' => [
+                'title' => '大切な人が雑に扱われて、自分まで反応しそうな時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/reacting-to-loved-one-being-hurt.md')),
+            ],
             'what-is-zatchy' => [
                 'title' => 'ざっちーってなに？',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/what-is-zatchy.md')),
+            ],
+        ];
+    }
+
+    public static function draftArticles(): array
+    {
+        return [
+            'delegating-feels-like-loss' => [
+                'title' => '自分でできることにお金を払うのは損だと思ってしまう時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/delegating-feels-like-loss.md')),
+            ],
+            'archive-yohaku-letting-go' => [
+                'title' => 'アーカイヴと余白のあいだで、物を手放せない時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/archive-yohaku-letting-go.md')),
+            ],
+            'crowd-pressure-anxiety' => [
+                'title' => '大勢の空気に飲まれそうな時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/crowd-pressure-anxiety.md')),
+            ],
+            'scarcity-anxiety-rush' => [
+                'title' => 'お金が足りなくなる気がして、買う決断ができない時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/scarcity-anxiety-rush.md')),
+            ],
+            'delegated-work-feels-sloppy' => [
+                'title' => '任せた相手の雑さが引っかかって、結局自分で回収したくなる時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/delegated-work-feels-sloppy.md')),
+            ],
+            'money-used-without-consent' => [
+                'title' => '自分のお金を納得いかない形で使われてモヤモヤする時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/money-used-without-consent.md')),
+            ],
+            'repelled-by-shared-values' => [
+                'title' => 'みんながありがたがる空気に引いてしまう時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/repelled-by-shared-values.md')),
+            ],
+            'jealousy-toward-capable-people' => [
+                'title' => '他者がうまくいっているように見えて、気持ちがねじれる時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/jealousy-toward-capable-people.md')),
+            ],
+            'projecting-moyamoya-onto-others' => [
+                'title' => '自分のモヤモヤがきっかけで負の連鎖を広げたくない時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/projecting-moyamoya-onto-others.md')),
+            ],
+            'afraid-of-being-older-side' => [
+                'title' => '年下キャラを卒業できず、自分が年上側に立つのが怖い時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/afraid-of-being-older-side.md')),
             ],
         ];
     }

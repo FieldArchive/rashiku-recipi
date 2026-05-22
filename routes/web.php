@@ -10,6 +10,9 @@ Route::get('/', function () {
 
 Route::get('/articles/{slug}', function (string $slug) {
     $article = Arr::get(RashikuContent::articles(), $slug);
+    if (! $article && app()->environment('local')) {
+        $article = Arr::get(RashikuContent::draftArticles(), $slug);
+    }
     abort_unless($article, 404);
 
     return view('article', [
