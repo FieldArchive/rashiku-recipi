@@ -106,6 +106,10 @@ class RashikuContent
                 'title' => '整えることに時間を使ったのに、これでいいのかと思う時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/restoring-time-doubt.md')),
             ],
+            'money-outflow-no-inflow' => [
+                'title' => 'お金を出すことはできるのに、入る流れが見えない時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/money-outflow-no-inflow.md')),
+            ],
             'what-is-yohaku' => [
                 'title' => '余白ってなに？',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/what-is-yohaku.md')),
@@ -135,10 +139,6 @@ class RashikuContent
             'archive-yohaku-letting-go' => [
                 'title' => 'アーカイヴと余白のあいだで、物を手放せない時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/archive-yohaku-letting-go.md')),
-            ],
-            'money-outflow-no-inflow' => [
-                'title' => 'お金を出すことはできるのに、入る流れが見えない時のレシピ',
-                'html' => self::renderDialogueMarkdown(resource_path('content/articles/money-outflow-no-inflow.md')),
             ],
             'crowd-pressure-anxiety' => [
                 'title' => '大勢の空気に飲まれそうな時のレシピ',

@@ -17,7 +17,7 @@
                     ['label' => '雑に時間を使ってしまっている', 'article' => 'using-time-sloppily'],
                     ['label' => '整えることに時間を使ったのに、これでいいのかと思う', 'article' => 'restoring-time-doubt'],
                     ['label' => 'アーカイヴと余白のあいだで、物を手放せない（調整中）', 'article' => 'archive-yohaku-letting-go', 'draft' => true],
-                    ['label' => 'お金を出すことはできるのに、入る流れが見えない（調整中）', 'article' => 'money-outflow-no-inflow', 'draft' => true],
+                    ['label' => 'お金を出すことはできるのに、入る流れが見えない', 'article' => 'money-outflow-no-inflow'],
                 ],
             ],
             'anxiety-check' => [

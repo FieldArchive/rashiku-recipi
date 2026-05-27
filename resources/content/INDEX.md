@@ -70,7 +70,7 @@
       │  └─ articles/restoring-time-doubt.md
       ├─ 仮: アーカイヴと余白のあいだで、物を手放せない
       │  └─ articles/archive-yohaku-letting-go.md
-      └─ 仮: お金を出すことはできるのに、入る流れが見えない
+      └─ FIX: お金を出すことはできるのに、入る流れが見えない
          └─ articles/money-outflow-no-inflow.md
 ```
 
