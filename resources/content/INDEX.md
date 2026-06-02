@@ -70,8 +70,10 @@
       │  └─ articles/restoring-time-doubt.md
       ├─ 仮: アーカイヴと余白のあいだで、物を手放せない
       │  └─ articles/archive-yohaku-letting-go.md
-      └─ FIX: お金を出すことはできるのに、入る流れが見えない
-         └─ articles/money-outflow-no-inflow.md
+      ├─ FIX: お金を出すことはできるのに、入る流れが見えない
+      │  └─ articles/money-outflow-no-inflow.md
+      └─ FIX: 価値の芽を、お金の入口につなげたい
+         └─ articles/value-seeds-to-money-entrance.md
 ```
 
 ## 用語・基本記事

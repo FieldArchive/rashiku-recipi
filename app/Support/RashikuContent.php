@@ -110,6 +110,10 @@ class RashikuContent
                 'title' => 'お金を出すことはできるのに、入る流れが見えない時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/money-outflow-no-inflow.md')),
             ],
+            'value-seeds-to-money-entrance' => [
+                'title' => '価値の芽を、お金の入口につなげたい時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/value-seeds-to-money-entrance.md')),
+            ],
             'what-is-yohaku' => [
                 'title' => '余白ってなに？',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/what-is-yohaku.md')),

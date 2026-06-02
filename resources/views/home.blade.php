@@ -18,6 +18,7 @@
                     ['label' => '整えることに時間を使ったのに、これでいいのかと思う', 'article' => 'restoring-time-doubt'],
                     ['label' => 'アーカイヴと余白のあいだで、物を手放せない（調整中）', 'article' => 'archive-yohaku-letting-go', 'draft' => true],
                     ['label' => 'お金を出すことはできるのに、入る流れが見えない', 'article' => 'money-outflow-no-inflow'],
+                    ['label' => '価値の芽を、お金の入口につなげたい', 'article' => 'value-seeds-to-money-entrance'],
                 ],
             ],
             'anxiety-check' => [
