@@ -36,6 +36,8 @@
                     ['label' => '自分らしくしようとすると、痛い思いがよみがえる', 'article' => 'being-yourself-brings-back-pain'],
                     ['label' => '自分の選択を後悔している', 'article' => 'cannot-trust-my-choice'],
                     ['label' => '予期せぬことが重なって、余白が試されている', 'article' => 'yohaku-tested-by-events'],
+                    ['label' => '大切な人が雑に扱われて、自分まで反応しそう', 'article' => 'reacting-to-loved-one-being-hurt'],
+                    ['label' => '相手を元気にしようとして、かえって悪化させてしまった', 'article' => 'trying-to-fix-others-mood'],
                 ],
             ],
             'other-person-trigger-check' => [
@@ -45,7 +47,6 @@
                     ['label' => '毎回バッドエンドルートを選んでしまうのはなぜだろうって思えてきた。', 'article' => 'trying-hard-but-bad-ending'],
                     ['label' => '任せた相手の雑さが引っかかって、結局自分で回収したくなる（調整中）', 'article' => 'delegated-work-feels-sloppy', 'draft' => true],
                     ['label' => '自分のお金を納得いかない形で使われてモヤモヤする（調整中）', 'article' => 'money-used-without-consent', 'draft' => true],
-                    ['label' => '大切な人が雑に扱われて、自分まで反応しそう', 'article' => 'reacting-to-loved-one-being-hurt'],
                 ],
             ],
             'self-trigger-check' => [

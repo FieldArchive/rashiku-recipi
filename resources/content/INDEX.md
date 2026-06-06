@@ -22,8 +22,6 @@
    │  │  └─ articles/delegated-work-feels-sloppy.md
    │  ├─ 仮: 自分のお金を納得いかない形で使われてモヤモヤする
    │  │  └─ articles/money-used-without-consent.md
-   │  └─ 仮・押せる: 大切な人が雑に扱われて、自分まで反応しそう
-   │     └─ articles/reacting-to-loved-one-being-hurt.md
    │
    ├─ 自分の内側からモヤモヤが出ている
    │  ├─ 仮: みんながありがたがる空気に引いてしまう
@@ -60,8 +58,12 @@
    │  │  └─ articles/being-yourself-brings-back-pain.md
    │  ├─ FIX: 自分の選択を後悔している
    │  │  └─ articles/cannot-trust-my-choice.md
-   │  └─ FIX: 予期せぬことが重なって、余白が試されている
-   │     └─ articles/yohaku-tested-by-events.md
+   │  ├─ FIX: 予期せぬことが重なって、余白が試されている
+   │  │  └─ articles/yohaku-tested-by-events.md
+   │  ├─ FIX: 大切な人が雑に扱われて、自分まで反応しそう
+   │  │  └─ articles/reacting-to-loved-one-being-hurt.md
+   │  └─ FIX: 相手を元気にしようとして、かえって悪化させてしまった
+   │     └─ articles/trying-to-fix-others-mood.md
    │
    └─ 時間やお金の使い方で気持ちが引っかかる
       ├─ FIX: 雑に時間を使ってしまっている
