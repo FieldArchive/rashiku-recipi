@@ -130,9 +130,9 @@ class RashikuContent
                 'title' => '大切な人が雑に扱われて、自分まで反応しそうな時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/reacting-to-loved-one-being-hurt.md')),
             ],
-            'trying-to-fix-others-mood' => [
-                'title' => '相手を元気にしようとして、かえって悪化させてしまった時のレシピ',
-                'html' => self::renderDialogueMarkdown(resource_path('content/articles/trying-to-fix-others-mood.md')),
+            'did-it-for-you-resentment' => [
+                'title' => '「してあげたのに」と思ってしまう時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/did-it-for-you-resentment.md')),
             ],
             'what-is-zatchy' => [
                 'title' => 'ざっちーってなに？',

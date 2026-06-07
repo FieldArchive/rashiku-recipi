@@ -34,10 +34,8 @@
                 'choices' => [
                     ['label' => '人に会ったり、出かけたりしたあとでモヤモヤが晴れない', 'article' => 'after-going-out-heavy'],
                     ['label' => '自分らしくしようとすると、痛い思いがよみがえる', 'article' => 'being-yourself-brings-back-pain'],
-                    ['label' => '自分の選択を後悔している', 'article' => 'cannot-trust-my-choice'],
                     ['label' => '予期せぬことが重なって、余白が試されている', 'article' => 'yohaku-tested-by-events'],
                     ['label' => '大切な人が雑に扱われて、自分まで反応しそう', 'article' => 'reacting-to-loved-one-being-hurt'],
-                    ['label' => '相手を元気にしようとして、かえって悪化させてしまった', 'article' => 'trying-to-fix-others-mood'],
                 ],
             ],
             'other-person-trigger-check' => [
@@ -52,12 +50,14 @@
             'self-trigger-check' => [
                 'prompt' => 'いま近いのはどちらですか？',
                 'choices' => [
+                    ['label' => '自分の選択を後悔している', 'article' => 'cannot-trust-my-choice'],
+                    ['label' => '大事な場で、自分らしさが飛んでしまう', 'article' => 'lose-myself-in-important-gatherings'],
+                    ['label' => 'モヤモヤのせいで、次の一手を間違えそう', 'article' => 'moyamoya-wrong-next-move'],
+                    ['label' => '「してあげたのに」と思ってしまう', 'article' => 'did-it-for-you-resentment'],
                     ['label' => 'みんながありがたがる空気に引いてしまう（調整中）', 'article' => 'repelled-by-shared-values', 'draft' => true],
                     ['label' => '他者がうまくいっているように見えて、気持ちがねじれる（調整中）', 'article' => 'jealousy-toward-capable-people', 'draft' => true],
                     ['label' => '自分のモヤモヤを相手にぶつけてしまった（調整中）', 'article' => 'projecting-moyamoya-onto-others', 'draft' => true],
                     ['label' => '年下キャラを卒業できず、自分が年上側に立つのが怖い（調整中）', 'article' => 'afraid-of-being-older-side', 'draft' => true],
-                    ['label' => '大事な場で、自分らしさが飛んでしまう', 'article' => 'lose-myself-in-important-gatherings'],
-                    ['label' => 'モヤモヤのせいで、次の一手を間違えそう', 'article' => 'moyamoya-wrong-next-move'],
                 ],
             ],
             'work-freeze-check' => [

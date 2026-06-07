@@ -24,18 +24,22 @@
    │  │  └─ articles/money-used-without-consent.md
    │
    ├─ 自分の内側からモヤモヤが出ている
+   │  ├─ FIX: 自分の選択を後悔している
+   │  │  └─ articles/cannot-trust-my-choice.md
+   │  ├─ FIX: 大事な場で、自分らしさが飛んでしまう
+   │  │  └─ articles/lose-myself-in-important-gatherings.md
+   │  ├─ FIX: モヤモヤのせいで、次の一手を間違えそう
+   │  │  └─ articles/moyamoya-wrong-next-move.md
+   │  ├─ FIX: 「してあげたのに」と思ってしまう
+   │  │  └─ articles/did-it-for-you-resentment.md
    │  ├─ 仮: みんながありがたがる空気に引いてしまう
    │  │  └─ articles/repelled-by-shared-values.md
    │  ├─ 仮: 他者がうまくいっているように見えて、気持ちがねじれる
    │  │  └─ articles/jealousy-toward-capable-people.md
    │  ├─ 仮: 自分のモヤモヤを相手にぶつけてしまった
    │  │  └─ articles/projecting-moyamoya-onto-others.md
-   │  ├─ 仮: 年下キャラを卒業できず、自分が年上側に立つのが怖い
-   │  │  └─ articles/afraid-of-being-older-side.md
-   │  ├─ FIX: 大事な場で、自分らしさが飛んでしまう
-   │  │  └─ articles/lose-myself-in-important-gatherings.md
-   │  └─ FIX: モヤモヤのせいで、次の一手を間違えそう
-   │     └─ articles/moyamoya-wrong-next-move.md
+   │  └─ 仮: 年下キャラを卒業できず、自分が年上側に立つのが怖い
+   │     └─ articles/afraid-of-being-older-side.md
    │
    ├─ やるべきことに、やる気が出ない
    │  ├─ FIX: 何もかも手が出ない
@@ -56,14 +60,10 @@
    │  │  └─ articles/after-going-out-heavy.md
    │  ├─ FIX: 自分らしくしようとすると、痛い思いがよみがえる
    │  │  └─ articles/being-yourself-brings-back-pain.md
-   │  ├─ FIX: 自分の選択を後悔している
-   │  │  └─ articles/cannot-trust-my-choice.md
    │  ├─ FIX: 予期せぬことが重なって、余白が試されている
    │  │  └─ articles/yohaku-tested-by-events.md
    │  ├─ FIX: 大切な人が雑に扱われて、自分まで反応しそう
    │  │  └─ articles/reacting-to-loved-one-being-hurt.md
-   │  └─ FIX: 相手を元気にしようとして、かえって悪化させてしまった
-   │     └─ articles/trying-to-fix-others-mood.md
    │
    └─ 時間やお金の使い方で気持ちが引っかかる
       ├─ FIX: 雑に時間を使ってしまっている
