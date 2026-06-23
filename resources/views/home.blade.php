@@ -9,6 +9,7 @@
                     ['label' => 'えもいえぬ不安がある', 'next' => 'anxiety-check'],
                     ['label' => '気持ちに余裕があっても、揺さぶられる', 'next' => 'lingering-feeling-check'],
                     ['label' => '時間やお金の使い方で気持ちが引っかかる', 'next' => 'time-use-check'],
+                    ['label' => '不安で押しつぶされそう', 'next' => 'strong-anxiety-check'],
                 ],
             ],
             'time-use-check' => [
@@ -29,6 +30,12 @@
                     ['label' => 'お金が足りなくなる気がして、買う決断ができない（調整中）', 'article' => 'scarcity-anxiety-rush', 'draft' => true],
             ],
         ],
+            'strong-anxiety-check' => [
+                'prompt' => 'いま近いのはどちらですか？',
+                'choices' => [
+                    ['label' => '自分の構築を進めたいのに、お金の不安で手が止まる', 'article' => 'no-income-prospect-freeze'],
+                ],
+            ],
             'lingering-feeling-check' => [
                 'prompt' => 'いま近いのはどちらですか？',
                 'choices' => [

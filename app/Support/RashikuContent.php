@@ -110,6 +110,10 @@ class RashikuContent
                 'title' => 'お金を出すことはできるのに、入る流れが見えない時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/money-outflow-no-inflow.md')),
             ],
+            'no-income-prospect-freeze' => [
+                'title' => '自分の構築を進めたいのに、お金の不安で手が止まる時のレシピ',
+                'html' => self::renderDialogueMarkdown(resource_path('content/articles/no-income-prospect-freeze.md')),
+            ],
             'value-seeds-to-money-entrance' => [
                 'title' => '価値の芽を、お金の入口につなげたい時のレシピ',
                 'html' => self::renderDialogueMarkdown(resource_path('content/articles/value-seeds-to-money-entrance.md')),

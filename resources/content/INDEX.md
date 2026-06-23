@@ -65,17 +65,21 @@
    │  ├─ FIX: 大切な人が雑に扱われて、自分まで反応しそう
    │  │  └─ articles/reacting-to-loved-one-being-hurt.md
    │
-   └─ 時間やお金の使い方で気持ちが引っかかる
-      ├─ FIX: 雑に時間を使ってしまっている
-      │  └─ articles/using-time-sloppily.md
-      ├─ FIX: 整えることに時間を使ったのに、これでいいのかと思う
-      │  └─ articles/restoring-time-doubt.md
-      ├─ 仮: アーカイヴと余白のあいだで、物を手放せない
-      │  └─ articles/archive-yohaku-letting-go.md
-      ├─ FIX: お金を出すことはできるのに、入る流れが見えない
-      │  └─ articles/money-outflow-no-inflow.md
-      └─ FIX: 価値の芽を、お金の入口につなげたい
-         └─ articles/value-seeds-to-money-entrance.md
+   ├─ 時間やお金の使い方で気持ちが引っかかる
+   │  ├─ FIX: 雑に時間を使ってしまっている
+   │  │  └─ articles/using-time-sloppily.md
+   │  ├─ FIX: 整えることに時間を使ったのに、これでいいのかと思う
+   │  │  └─ articles/restoring-time-doubt.md
+   │  ├─ 仮: アーカイヴと余白のあいだで、物を手放せない
+   │  │  └─ articles/archive-yohaku-letting-go.md
+   │  ├─ FIX: お金を出すことはできるのに、入る流れが見えない
+   │  │  └─ articles/money-outflow-no-inflow.md
+   │  └─ FIX: 価値の芽を、お金の入口につなげたい
+   │     └─ articles/value-seeds-to-money-entrance.md
+   │
+   └─ 不安で押しつぶされそう
+      └─ FIX: 自分の構築を進めたいのに、お金の不安で手が止まる
+         └─ articles/no-income-prospect-freeze.md
 ```
 
 ## 用語・基本記事
@@ -190,6 +194,17 @@
    │  └─ 「えもいえぬ不安がある」の下
    └─ メモ:
       └─ お金がなくなる不安と急ぎの判断をほどく記事として保留
+
+└─ articles/no-income-prospect-freeze.md
+   ├─ タイトル: 自分の構築を進めたいのに、お金の不安で手が止まる時のレシピ
+   ├─ 置き場所:
+   │  └─ 「不安で押しつぶされそう」の下
+   ├─ 方向:
+   │  ├─ 自分の構築を最優先したい時期だとわかっている
+   │  ├─ その間にもお金は出ていき、すぐ収入になる見込みはまだない
+   │  └─ お金の不安でざっちーが強まり、自分の構築に手が戻らなくなる
+   └─ メモ:
+      └─ 「えもいえぬ不安」より強い、押しつぶされそうな不安の入口として独立させる
 
 └─ articles/afraid-of-being-older-side.md
    ├─ タイトル: 年下キャラを卒業できず、自分が年上側に立つのが怖い時のレシピ
